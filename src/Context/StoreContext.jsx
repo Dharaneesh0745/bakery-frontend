@@ -11,31 +11,11 @@ const StoreContextProvider = (props) => {
   const currency = "₹";
   const deliveryCharge = 0;
 
-<<<<<<< HEAD
   const addToCart = async (itemId) => {
     if (!cartItems[itemId]) {
       setCartItems((prev) => ({ ...prev, [itemId]: 1 }));
     } else {
       setCartItems((prev) => ({ ...prev, [itemId]: prev[itemId] + 1 }));
-=======
-    const url = "https://bakery-backend-oxx4.onrender.com"
-    const [food_list, setFoodList] = useState([]);
-    const [cartItems, setCartItems] = useState({});
-    const [token, setToken] = useState("")
-    const currency = "₹";
-    const deliveryCharge = 50;
-
-    const addToCart = async (itemId) => {
-        if (!cartItems[itemId]) {
-            setCartItems((prev) => ({ ...prev, [itemId]: 1 }));
-        }
-        else {
-            setCartItems((prev) => ({ ...prev, [itemId]: prev[itemId] + 1 }));
-        }
-        if (token) {
-            await axios.post(url + "/api/cart/add", { itemId }, { headers: { token } });
-        }
->>>>>>> 65ff7e648546acab1b526410962b93eeef343ae1
     }
     if (token) {
       await axios.post(
@@ -118,42 +98,4 @@ const StoreContextProvider = (props) => {
   );
 };
 
-<<<<<<< HEAD
-=======
-    useEffect(() => {
-        async function loadData() {
-            await fetchFoodList();
-            if (localStorage.getItem("token")) {
-                setToken(localStorage.getItem("token"))
-                await loadCartData({ token: localStorage.getItem("token") })
-            }
-        }
-        loadData()
-    }, [])
-
-    const contextValue = {
-        url,
-        food_list,
-        menu_list,
-        cartItems,
-        addToCart,
-        removeFromCart,
-        getTotalCartAmount,
-        token,
-        setToken,
-        loadCartData,
-        setCartItems,
-        currency,
-        deliveryCharge
-    };
-
-    return (
-        <StoreContext.Provider value={contextValue}>
-            {props.children}
-        </StoreContext.Provider>
-    )
-
-}
-
->>>>>>> 65ff7e648546acab1b526410962b93eeef343ae1
 export default StoreContextProvider;
