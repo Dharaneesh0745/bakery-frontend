@@ -122,39 +122,39 @@ export const menu_list = [
 export const food_list = [
   {
     _id: "1",
-    name: "Greek salad",
+    name: "Greek Lassi",
     image: food_1,
     price: 12,
     description:
       "Food provides essential nutrients for overall health and well-being",
-    category: "Salad",
+    category: "Lassi",
   },
   {
     _id: "2",
-    name: "Veg salad",
+    name: "Veg Lassi",
     image: food_2,
     price: 18,
     description:
       "Food provides essential nutrients for overall health and well-being",
-    category: "Salad",
+    category: "Lassi",
   },
   {
     _id: "3",
-    name: "Clover Salad",
+    name: "Clover Lassi",
     image: food_3,
     price: 16,
     description:
       "Food provides essential nutrients for overall health and well-being",
-    category: "Salad",
+    category: "Lassi",
   },
   {
     _id: "4",
-    name: "Chicken Salad",
+    name: "Chicken Lassi",
     image: food_4,
     price: 24,
     description:
       "Food provides essential nutrients for overall health and well-being",
-    category: "Salad",
+    category: "Lassi",
   },
   {
     _id: "5",
@@ -307,7 +307,7 @@ export const food_list = [
     price: 14,
     description:
       "Food provides essential nutrients for overall health and well-being",
-    category: "Pure Veg",
+    category: "Fresh Juices",
   },
   {
     _id: "22",
@@ -316,7 +316,7 @@ export const food_list = [
     price: 22,
     description:
       "Food provides essential nutrients for overall health and well-being",
-    category: "Pure Veg",
+    category: "Fresh Juices",
   },
   {
     _id: "23",
@@ -325,7 +325,7 @@ export const food_list = [
     price: 10,
     description:
       "Food provides essential nutrients for overall health and well-being",
-    category: "Pure Veg",
+    category: "Fresh Juices",
   },
   {
     _id: "24",
@@ -334,7 +334,7 @@ export const food_list = [
     price: 12,
     description:
       "Food provides essential nutrients for overall health and well-being",
-    category: "Pure Veg",
+    category: "Fresh Juices",
   },
   {
     _id: "25",

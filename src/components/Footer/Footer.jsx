@@ -9,10 +9,8 @@ const Footer = () => {
         <div className="footer-content-left">
           <img src={assets.logoo} alt="" />
           <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of type
-            and scrambled it to make a type specimen book.
+            Milano Bakes S.F.No.620/4, Thudiyalur road, panchayat office
+            opposite, sarkarsamakulam, kovilpalayam, CBE-641107
           </p>
           <div className="footer-social-icons">
             <img src={assets.facebook_icon} alt="" />
@@ -32,8 +30,12 @@ const Footer = () => {
         <div className="footer-content-right">
           <h2>GET IN TOUCH</h2>
           <ul>
-            <li>+1-212-456-7890</li>
-            <li>contact@tomato.com</li>
+            <a href="tel:80723 86064">
+              <li>+91 80723 86064</li>
+            </a>
+            <a href="mailto:milanobakes@gmail.com">
+              <li>milanobakes@gmail.com</li>
+            </a>
           </ul>
         </div>
       </div>
